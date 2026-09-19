@@ -100,20 +100,20 @@ Complete all three responses below. Keep each response concise and specific to *
 ## 1. Framework Choice
 **Identify one feature Bootstrap made significantly faster to implement. Briefly explain what Bootstrap provided and why that helped this project.**
 
-[Replace this text with your response.]
+[Setting up divs in rows and colums, was very quick. I realized that one line of HTML made up for a whole lot of CSS when it came to divs and spacing.]
 
 ## 2. Adaptation
 **Identify one Bootstrap default you intentionally changed for the client. Explain what you changed and how the adaptation better supports Cedar & Stone.**
 
-[Replace this text with your response.]
+[I changed the navbar styling. Bootstrap normally uses a light background with standard link styling, but I changed this style to a dark forest-green and added a rust-orange hover box around the navigation links. This better supports Cedar & Stone because the colors match the company’s warm color pallete, which also allows for better visabilty]
 
 ## 3. Professional Judgment
 **Identify one part of the project you would not rebuild from scratch because Bootstrap already provides an appropriate solution. Explain why keeping the framework solution is the better professional choice.**
 
-[Replace this text with your response.]
+[I would proably say the Navbar, because it is such a crucial part of each webpage. Their navbar is very professnail, as long as you make sure your style sheet aligns with the client branding]
 
 ## Live Site
-[Add your published GitHub Pages URL here.]
+[https://juicedesignedtha.github.io/week05-bootstrap/]
 
 ## Final Reminder
 The goal is not to use as many Bootstrap classes as possible.
