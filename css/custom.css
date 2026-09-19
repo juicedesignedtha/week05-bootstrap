@@ -26,3 +26,593 @@
   If you find yourself writing large overrides or repeated !important
   declarations, reconsider your Bootstrap structure/classes first.
 */
+
+:root {
+  --cedar-green: #203c35;
+  --cedar-green-light: #e8efeb;
+  --cedar-cream: #f5f0e7;
+  --cedar-background: #fbfaf7;
+  --cedar-rust: #a86643;
+  --cedar-text: #5d6a64;
+  --cedar-border: #d6ddd9;
+  --cedar-beige: #eee4db;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--cedar-background);
+  color: var(--cedar-text);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--cedar-green);
+  font-weight: 700;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  transition: all 0.2s ease;
+}
+
+
+header .navbar {
+  background-color: var(--cedar-green) !important;
+  padding: 1rem 0;
+  min-height: 105px;
+}
+
+header .navbar .container {
+  max-width: 1210px;
+}
+
+.navbar-brand {
+  color: #ffffff !important;
+  font-size: 1.75rem;
+  letter-spacing: 0.04em;
+}
+
+.navbar-brand:hover {
+  color: #ffffff !important;
+}
+
+.navbar-nav {
+  gap: 1.5rem;
+}
+
+.navbar .nav-link {
+  color: #ffffff !important;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 0 !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #e2ded3 !important;
+}
+
+
+.navbar-toggler {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.15);
+}
+
+.navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+}
+
+
+
+main > section:first-child {
+  background-color: var(--cedar-cream);
+  padding-top: 4rem !important;
+  padding-bottom: 5rem !important;
+}
+
+main > section:first-child .container {
+  max-width: 1210px;
+}
+
+main > section:first-child .row {
+  min-height: 430px;
+}
+
+
+
+main > section:first-child .text-uppercase {
+  color: var(--cedar-rust);
+  letter-spacing: 0.08em;
+}
+
+
+main > section:first-child h1 {
+  color: var(--cedar-green);
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  line-height: 1.12;
+  max-width: 700px;
+}
+
+
+main > section:first-child .lead {
+  color: var(--cedar-text);
+  font-size: 1.15rem;
+  max-width: 650px;
+}
+
+
+
+main > section:first-child img {
+  max-height: 360px;
+  width: auto;
+  border-radius: 22px;
+}
+
+
+
+.btn {
+  border-radius: 8px;
+  font-weight: 700;
+  padding: 0.85rem 1.4rem;
+  transition: all 0.2s ease;
+}
+
+
+
+.btn-primary {
+  background-color: var(--cedar-green);
+  border-color: var(--cedar-green);
+  color: #ffffff;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #162e29;
+  border-color: #162e29;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+
+.btn-outline-primary {
+  color: var(--cedar-green);
+  border-color: var(--cedar-green);
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  background-color: var(--cedar-green);
+  border-color: var(--cedar-green);
+  color: #ffffff;
+}
+
+
+.btn-outline-secondary {
+  color: var(--cedar-green);
+  border: 2px solid var(--cedar-green);
+  background-color: transparent;
+}
+
+.btn-outline-secondary:hover,
+.btn-outline-secondary:focus {
+  background-color: var(--cedar-green);
+  border-color: var(--cedar-green);
+  color: #ffffff;
+}
+
+
+
+#services {
+  background-color: var(--cedar-background) !important;
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
+
+#services .container {
+  max-width: 1210px;
+}
+
+
+
+#services .text-uppercase {
+  color: var(--cedar-rust);
+  letter-spacing: 0.08em;
+}
+
+
+
+#services h2 {
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  line-height: 1.2;
+}
+
+
+
+#services .card {
+  background-color: #ffffff;
+  border: 2px solid var(--cedar-border);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: none !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#services .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(32, 60, 53, 0.08) !important;
+}
+
+
+
+#services .card-img-top {
+  height: 155px;
+  object-fit: contain;
+  background-color: var(--cedar-green-light);
+  padding: 2rem !important;
+}
+
+
+#services .col:nth-child(2) .card-img-top {
+  background-color: var(--cedar-beige);
+}
+
+
+
+#services .card-body {
+  padding: 2rem;
+}
+
+
+#services .card-body .text-uppercase {
+  color: var(--cedar-rust);
+  letter-spacing: 0.06em;
+}
+
+
+#services .card-title {
+  color: var(--cedar-green);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+
+#services .card-text {
+  color: var(--cedar-text);
+  margin-bottom: 1.5rem;
+}
+
+
+#process {
+  background-color: var(--cedar-green-light);
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
+
+#process .container {
+  max-width: 1210px;
+}
+
+
+#process .text-uppercase {
+  color: var(--cedar-rust);
+  letter-spacing: 0.08em;
+}
+
+
+#process h2 {
+  font-size: clamp(2rem, 3.5vw, 2.6rem);
+  line-height: 1.2;
+}
+
+
+#process ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: process;
+}
+
+#process ol li {
+  position: relative;
+  padding: 1.25rem 1.25rem 1.25rem 4.5rem;
+  margin-bottom: 1rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  color: var(--cedar-text);
+  box-shadow: 0 4px 12px rgba(32, 60, 53, 0.05);
+}
+
+#process ol li::before {
+  content: counter(process);
+  counter-increment: process;
+
+  position: absolute;
+  left: 1.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background-color: var(--cedar-green);
+  color: #ffffff;
+
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+#process ol li strong {
+  color: var(--cedar-green);
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+#process ol li span {
+  display: block;
+}
+
+
+
+#about {
+  background-color: var(--cedar-background) !important;
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
+
+#about .container {
+  max-width: 1210px;
+}
+
+
+#about img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: contain;
+  background-color: #ddd4c9;
+  border-radius: 18px;
+}
+
+
+#about .text-uppercase {
+  color: var(--cedar-rust);
+  letter-spacing: 0.08em;
+}
+
+
+#about h2 {
+  font-size: clamp(2rem, 3.5vw, 2.6rem);
+  line-height: 1.2;
+}
+
+
+#about .list-group {
+  margin-top: 1.5rem;
+}
+
+#about .list-group-item {
+  color: var(--cedar-green);
+  font-weight: 600;
+  border-bottom: 1px solid var(--cedar-border);
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+}
+
+
+
+#contact {
+  background-color: var(--cedar-cream);
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
+
+#contact .container {
+  max-width: 1210px;
+}
+
+
+#contact .text-uppercase {
+  color: var(--cedar-rust);
+  letter-spacing: 0.08em;
+}
+
+
+#contact h2 {
+  font-size: clamp(2rem, 3.5vw, 2.6rem);
+}
+
+
+#contact .border {
+  background-color: #ffffff;
+  border: 2px solid var(--cedar-border) !important;
+  border-radius: 18px !important;
+  padding: 2rem !important;
+}
+
+
+
+#contact .fw-bold {
+  color: var(--cedar-green);
+}
+
+
+
+#contact a:not(.btn) {
+  color: var(--cedar-rust);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#contact a:not(.btn):hover {
+  color: var(--cedar-green);
+  text-decoration: underline;
+}
+
+
+footer {
+  background-color: var(--cedar-green) !important;
+  padding-top: 2.5rem !important;
+  padding-bottom: 2.5rem !important;
+}
+
+footer .container {
+  max-width: 1210px;
+}
+
+footer .fw-bold {
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+footer .text-white-50 {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+
+@media (max-width: 991.98px) {
+
+  header .navbar {
+    min-height: auto;
+    padding: 1rem 0;
+  }
+
+  .navbar-nav {
+    gap: 0;
+    padding-top: 1rem;
+  }
+
+  .navbar .nav-link {
+    padding: 0.65rem 0 !important;
+  }
+
+  main > section:first-child {
+    padding-top: 3.5rem !important;
+  }
+
+  main > section:first-child img {
+    max-height: 300px;
+  }
+
+  #process ol {
+    margin-top: 1rem;
+  }
+}
+
+
+@media (max-width: 767.98px) {
+
+  main > section:first-child {
+    text-align: center;
+  }
+
+  main > section:first-child h1 {
+    font-size: 2.5rem;
+  }
+
+  main > section:first-child .lead {
+    font-size: 1.05rem;
+  }
+
+  main > section:first-child .d-flex {
+    justify-content: center;
+  }
+
+  main > section:first-child img {
+    max-height: 260px;
+    margin-top: 1rem;
+  }
+
+  #services,
+  #process,
+  #about,
+  #contact {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+  }
+
+  #services h2,
+  #process h2,
+  #about h2,
+  #contact h2 {
+    font-size: 2rem;
+  }
+
+  #about img {
+    max-height: 300px;
+    margin-bottom: 1rem;
+  }
+}
+
+
+@media (max-width: 575.98px) {
+
+  .navbar-brand {
+    font-size: 1.4rem;
+  }
+
+  main > section:first-child h1 {
+    font-size: 2.15rem;
+  }
+
+  main > section:first-child .d-flex {
+    flex-direction: column;
+  }
+
+  main > section:first-child .btn {
+    width: 100%;
+  }
+
+  #services .card-body {
+    padding: 1.5rem;
+  }
+
+  #process ol li {
+    padding-left: 4rem;
+  }
+
+  #contact .border {
+    padding: 1.5rem !important;
+  }
+}
+
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--cedar-rust);
+  outline-offset: 3px;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+  }
+}
+```
