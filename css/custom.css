@@ -97,12 +97,21 @@ header .navbar .container {
   color: #ffffff !important;
   font-size: 1rem;
   font-weight: 500;
-  padding: 0.5rem 0 !important;
+  padding: 0.6rem 1rem !important;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus .p {
+  color: #e2ded3 !important;
 }
 
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
-  color: #e2ded3 !important;
+  background-color: #a86643;
+  color: #ffffff !important;
 }
 
 
@@ -615,4 +624,3 @@ button:focus-visible {
     transition: none !important;
   }
 }
-```
