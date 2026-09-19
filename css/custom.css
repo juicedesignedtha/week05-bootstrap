@@ -85,9 +85,6 @@ header .navbar .container {
   letter-spacing: 0.04em;
 }
 
-.navbar-brand:hover {
-  color: #ffffff !important;
-}
 
 .navbar-nav {
   gap: 1.5rem;
@@ -103,15 +100,12 @@ header .navbar .container {
 }
 
 
-.navbar .nav-link:hover,
-.navbar .nav-link:focus .p {
-  color: #e2ded3 !important;
-}
+
 
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
   background-color: #a86643;
-  color: #ffffff !important;
+  color: #e2ded3 !important;
 }
 
 
